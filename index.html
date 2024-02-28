@@ -147,19 +147,9 @@ document.getElementById("kadoIn").onclick = function () {
 }
 
 async function inipesan() {
-    var { value: nama } = await swals.fire({
-        title: 'Masukin Nama Kamu',
-        input: 'text',
-        inputValue: 'Windi Rochmawati' // Setting nama default di sini
-    });
-    if (nama && nama.length < 50) {
-        window.nama = nama;
-        vketikhalo = "Hai, " + nama + " ✨";
-        mulainama();
-    } else {
-        await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 50 karakter, ya!');
-        inipesan();
-    }
+    window.nama = 'Diah Ayu Pangrepti'; // Set nama
+    vketikhalo = "Hai, " + nama + " ✨";
+    mulainama();
 }
 
   //Variable Pertanyaan Akhir
